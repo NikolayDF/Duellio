@@ -1,0 +1,157 @@
+.casepage {
+  max-width: 1200px;
+  width: 86%;
+  margin: 18px auto 100px;
+}
+
+.casepage__crumbs {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.casepage__crumbs ul {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  margin: 0;
+  gap: 27px;
+}
+
+.casepage__crumb {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.38;
+}
+
+.casepage__crumb-link {
+  text-decoration: none;
+  color: #2b2d33;
+  position: relative;
+}
+
+.casepage__crumb-link::after {
+  text-decoration: none;
+  content: url('../../images/unwrap.svg');
+  position: absolute;
+  padding: 0 12px;
+}
+
+.casepage__crumb-link_dark {
+  color: #ffffff;
+}
+
+.casepage__title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.19;
+  margin: 13px 0 62px;
+}
+
+.casepage__container {
+  position: relative;
+}
+
+.casepage__tags {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  width: 14%;
+}
+
+.casepage__tag-clock {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.38;
+  margin: 0;
+  padding: 0 0 0 25px;
+}
+
+.casepage__tag-clock {
+  background-image: url(../../images/clockTag.svg);
+  background-repeat: no-repeat;
+}
+
+.casepage__tag-clock_dark {
+  background-image: url(../../images/clockTag-darktheme.svg);
+}
+
+.casepage__tag {
+  border: 2px solid #22bacb;
+  border-radius: 28px;
+  background: #ffffff;
+  height: 22px;
+  text-align: center;
+  padding: 9px 13px;
+  color: #2b2d33;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.38;
+}
+
+.casepage__articles {
+  margin: 0 auto 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 66%;
+  padding: 0;
+}
+
+.casepage__article {
+  list-style: none;
+  background: #ffffff;
+  border-radius: 40px;
+  padding: 32px;
+  color: #2b2d33;
+}
+
+.casepage__article-title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+}
+
+.casepage__article-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.38;
+  margin: 20px 0 0;
+}
+
+.casepage__back {
+  width: 66%;
+  margin: 0 auto;
+}
+
+.casepage__back-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.38;
+  color: #2b2d33;
+  text-decoration: none;
+  margin: 0 0 0 14px;
+}
+
+.casepage__back-link::before {
+  text-decoration: none;
+  content: url('../../images/casepage-back.svg');
+  position: absolute;
+  padding: 0;
+  margin: 0 0 0 -14px;
+}
+
+.casepage__back-link_dark {
+  color: #ffffff;
+}
+
+.casepage__back-link_dark::before {
+  text-decoration: none;
+  content: url('../../images/casepage-back-darktheme.svg');
+  position: absolute;
+  padding: 0;
+  margin: 0 0 0 -14px;
+}

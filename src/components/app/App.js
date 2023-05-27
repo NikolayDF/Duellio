@@ -7,11 +7,14 @@ import { ThemeContext } from '../../contexts/ThemeContext';
 import Header from '../header/Header';
 import Footer from '../footer/Footer';
 import Clock from '../clock/Clock';
+import Cases from '../cases/Сases';
+import CasePage from '../casePage/CasePage';
+import Rules from '../rules/Rules';
 
 import useSound from 'use-sound'; // импорт звуков
 import endingSound from '../../sounds/Jukianas_club_timer_15_sec_2.mp3';
 import PageNotFound from '../pageNotFound/PageNotFound';
-import Cases from '../cases/Сases';
+
 
 function App() {
 
@@ -120,7 +123,7 @@ function App() {
       onClick={() => changeInputStateClick(false)}>
       <ThemeContext.Provider value={useTheme}>
 
-        <Header />
+        <Header changeTheme={changeTheme} />
 
         <Routes>
           <Route path="/" element={
@@ -140,9 +143,9 @@ function App() {
               inputStateActive={inputState}
               changeInputStateClick={changeInputStateClick} />
           } />
-          <Route path="/rules" element={<PageNotFound />} />
-          <Route path="/cases" element={<PageNotFound />} /> {/*element={<Cases />} */}
-          <Route path="/about" element={<PageNotFound />} />
+          <Route path="/rules" element={<Rules />} />
+          <Route path="/cases" element={<Cases />} />
+          <Route path="/casepage" element={<CasePage />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
 
